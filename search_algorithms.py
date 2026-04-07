@@ -10,14 +10,14 @@ def bin_search(arr:list, key:int) -> bool:
 
     while l<=r:
         mid =(l+r)// 2
-        if arr[mid]<key:
-            l=mid+1
+        if arr[mid]==key:
+            return True
 
         elif arr[mid]>key:
             r=mid-1
 
-        elif arr[mid]==key:
-            return True
+        elif arr[mid]<key:
+            l=mid+1
 
     return False
 
