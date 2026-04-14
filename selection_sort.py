@@ -1,5 +1,5 @@
 def selection_sort(arr: list):
-    for i in range(0,len(arr)-1):
+    for i in range(0,len(arr)-i):
         min_idx = min(arr[i:])
         index = arr.index(min_idx)
         arr[i],arr[index]=arr[index],arr[i]
